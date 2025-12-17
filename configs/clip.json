@@ -7,8 +7,8 @@
     "num_classes": 10,
     "batch_size": 32,
     "num_workers": 4,
-    "num_epochs": 10,
-    "label_smoothing": 0.1,
+    "num_epochs": 20,
+    "label_smoothing": 0.0,
 
     "model": {
         "type": "clip",
