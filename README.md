@@ -1,5 +1,17 @@
-# Experiment Execution Guide
+# Who Made This Image?  
+## Beyond Detection: Identifying the Generators of AI-Generated Images
 
+## 📌 Project Overview
+
+![Project Overview](./assests/architecture.png)
+This project focuses on **AI image generator attribution**, moving beyond simple real-vs-fake detection to identify **which AI model generated a given image**.  
+By analyzing generator-specific visual characteristics, the project aims to support **proactive defense, forensic analysis, and accountability** in the era of advanced image synthesis.
+
+We systematically explore combinations of **pretrained vision models** operating at different representation levels to capture complementary cues from AI-generated images.
+
+---
+
+# Experiment Execution Guide
 This project was designed to be executed in a **GPU-enabled environment**. To ensure reproducibility and ease of setup, **all experiments were conducted using Google Colab via `main.ipynb`**.
 
 ---
