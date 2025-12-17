@@ -1,0 +1,23 @@
+{
+    "data_root": "/content/data",
+    "mfm_pretrained_path": "./pretrained/mfm_pretrain_vit_base.pth",
+    "num_classes": 10,
+    "hidden_dim": 512,
+    "device": "cuda",
+    "batch_size": 32,
+    "num_epochs": 20,
+    "output_dir": "output",
+    "optimizer": "AdamW",
+    "optimizer_params": {"lr": 1e-4, "weight_decay": 0.01},
+    "scheduler": "CosineAnnealingLR",
+    "scheduler_params": {"T_max": 10},
+    "vision_encoder": "clip",
+    "dino_model_name": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "clip_model_name": "openai/clip-vit-base-patch32",
+    "train_mfm_encoder": false,
+    "train_vision_encoder": false,
+    "prompt_config": {
+            "use_deep_prompt": true,
+            "prompt_len": 20
+            }
+    }

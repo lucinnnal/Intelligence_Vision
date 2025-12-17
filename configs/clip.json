@@ -1,0 +1,38 @@
+{
+    "project_name": "Gen-Image-Classifier",
+    "run_name": "clip_finetune",
+    "output_dir": "outputs/clip",
+    "data_root": "/Users/kipyokim/Desktop/gen_ai/data",
+    "device": "cuda",
+    "num_classes": 10,
+    "batch_size": 32,
+    "num_workers": 4,
+    "num_epochs": 10,
+    "label_smoothing": 0.1,
+
+    "model": {
+        "type": "clip",
+        "vision_model_name": "openai/clip-vit-base-patch32",
+        "hidden_dim": 512,
+        "train_vision_encoder": false
+    },
+    
+    "normalization": {
+        "mean": [0.48145466, 0.4578275, 0.40821073],
+        "std": [0.26862954, 0.26130258, 0.27577711]
+    },
+
+    "optimizer": {
+        "name": "AdamW",
+        "params": {
+            "lr": 1e-3,
+            "weight_decay": 0.01
+        }
+    },
+    "scheduler": {
+        "name": "CosineAnnealingLR",
+        "params": {
+            "T_max": 50
+        }
+    }
+}

@@ -1,0 +1,10 @@
+MFM/*
+!MFM/.gitkeep
+
+data/*
+!data/.gitkeep
+
+pretrained/*
+!pretrained/.gitkeep
+
+*.zip
