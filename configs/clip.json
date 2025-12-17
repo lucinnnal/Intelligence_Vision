@@ -2,7 +2,7 @@
     "project_name": "Gen-Image-Classifier",
     "run_name": "clip_finetune",
     "output_dir": "outputs/clip",
-    "data_root": "/Users/kipyokim/Desktop/gen_ai/data",
+    "data_root": "./data",
     "device": "cuda",
     "num_classes": 10,
     "batch_size": 32,

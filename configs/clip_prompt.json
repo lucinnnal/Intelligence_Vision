@@ -1,5 +1,5 @@
 {
-    "data_root": "/content/data",
+    "data_root": "./data",
     "num_classes": 10,
     "hidden_dim": 512,
     "device": "cuda",

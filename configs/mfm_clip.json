@@ -2,7 +2,7 @@
     "project_name": "Gen-Image-Classifier",
     "run_name": "mfm_clip_finetune",
     "output_dir": "outputs/mfm_clip",
-    "data_root": "/Users/kipyokim/Desktop/gen_ai/data",
+    "data_root": "./data",
     "mfm_pretrained_path": "./pretrained/mfm_pretrain_resnet50.pth",
     "device": "cuda",
     "num_classes": 10,
