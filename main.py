@@ -201,7 +201,7 @@ class UnifiedModel(nn.Module):
     def forward(self, x):
         features = []
         if self.mfm_encoder:
-            mfm_feat = self.mfm_encoder(x)
+            mfm_feat = self.mfm_encoder(x).view(32, 768, -1).permute(0, 2, 1)
             # MFM returns [B, N, D], take the CLS token
             features.append(mfm_feat[:, 0, :])
         
