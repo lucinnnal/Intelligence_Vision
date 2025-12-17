@@ -131,13 +131,13 @@ class VisionEncoder(nn.Module):
         self.feature_dim = self.model.config.hidden_size
 
     def forward(self, x):
-        outputs = self.model(pixel_values=x)
+        outputs = self.model(pixel_values=x, output_hidden_states=True)
         if self.encoder_type == 'clip':
-            # Use pooler_output for CLIP
-            return outputs.pooler_output
+            # Return last hidden state for consistency (B, N, D)
+            return outputs.last_hidden_state
         else:
             # Use CLS token for DINO
-            return outputs.last_hidden_state[:, 0, :]
+            return outputs.last_hidden_state
 
 class MLPClassifier(nn.Module):
     """A simple MLP classifier head."""
@@ -207,7 +207,8 @@ class UnifiedModel(nn.Module):
         
         if self.vision_encoder:
             vision_feat = self.vision_encoder(x)
-            features.append(vision_feat)
+            # DINO/CLIP now return [B, N, D], take the CLS token
+            features.append(vision_feat[:, 0, :])
         
         # --- Feature Fusion ---
         if len(features) > 1:
