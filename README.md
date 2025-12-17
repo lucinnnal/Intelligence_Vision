@@ -6,6 +6,11 @@ This project was designed to be executed in a **GPU-enabled environment**. To en
 
 ## 🚀 Recommended: Run on Google Colab (GPU)
 
+### Dataset
+
+- The `data.zip` file can be downloaded from **Google Drive**:  
+  👉 [**data.zip**](https://drive.google.com/file/d/10b1yPJOOsW2nCoZcNUPlVIDjccWcax_o/view?usp=drive_link)
+
 ### Steps
 
 1. Unzip the provided `data.zip` file.
