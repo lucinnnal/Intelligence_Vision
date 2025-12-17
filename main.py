@@ -313,7 +313,7 @@ class Trainer:
         for epoch in range(self.config['num_epochs']):
             print(f"\nEpoch {epoch+1}/{self.config['num_epochs']}")
             train_loss, train_acc = self._train_epoch()
-            val_loss, val_acc = self._validate()
+            val_loss, val_acc, preds, labels = self._validate()
 
             print(f"Epoch {epoch+1}: Train Loss={train_loss:.4f}, Acc={train_acc:.2f}% | Val Loss={val_loss:.4f}, Acc={val_acc:.2f}%")
             
