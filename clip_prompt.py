@@ -14,7 +14,7 @@ from transformers import CLIPVisionModel
 # 1. 설정 및 경로
 # --------------------------------------------------------------------------- 
 
-# 10개 생성 모델 클래스
+# 10 생성 모델 클래스 정의
 GENERATOR_CLASSES = [
     'ADM', 'DDPM', 'Diff-ProjectedGAN', 'Diff-StyleGAN2', 'IDDPM',
     'LDM', 'PNDM', 'ProGAN', 'ProjectedGAN', 'StyleGAN'

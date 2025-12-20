@@ -245,10 +245,6 @@ class UnifiedModel(nn.Module):
         
         return params
 
-# NOTE: Prompt-tuning models are highly specialized and have been excluded for now
-# to create a clean, unified fine-tuning script first. If prompt tuning is still
-# required, it can be added back as a separate, more complex model class.
-
 # --------------------------------------------------------------------------- 
 # 5. TRAINER
 # --------------------------------------------------------------------------- 

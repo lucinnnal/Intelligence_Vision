@@ -1,7 +1,7 @@
 {
     "project_name": "Gen-Image-Classifier",
     "run_name": "dino_finetune",
-    "use_wandb": true,
+    "use_wandb": false,
     "output_dir": "outputs/dino",
     "data_root": "./data",
     "device": "cuda",
