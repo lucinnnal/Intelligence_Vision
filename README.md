@@ -26,7 +26,7 @@ This project was designed to be executed in a **GPU-enabled environment**. To en
 ### Pretrained Weights
 
 - The **MFM_pretrained_vit_base** weights are available on **Google Drive**:  
-  👉 [**MFM_pretrained_vit_base**](https://drive.google.com/file/d/1Y1q6E3LmkPfXoywYdRPy5lMKptfMIlby/view?usp=sharing)
+  👉 [**MFM_pretrained_vit_base**](https://drive.google.com/file/d/1qgMuODAxAapwXZXbH2Bgo5s5O_zc1bdl/view)
 
 ### Steps
 
