@@ -11,7 +11,7 @@ We systematically explore combinations of **pretrained vision models** operating
 
 ---
 
-# Experiment Execution Guide
+# Implementation Guide
 This project was designed to be executed in a **GPU-enabled environment**. To ensure reproducibility and ease of setup, **all experiments were conducted using Google Colab via `main.ipynb`**.
 
 ---
